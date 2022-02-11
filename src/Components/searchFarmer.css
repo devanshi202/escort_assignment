@@ -1,9 +1,9 @@
 .searchFarmerDiv{
     position: absolute;
   left: calc((100vw*50)/100);
-  top: calc((100vh*20)/100);
+  top: calc((100vh*7)/100);
   width: 300px;
-  height: 380px;
+  height: 520px;
   border: 2px solid black;
   padding: 10px;
   background-color: #398AB9;
@@ -32,4 +32,13 @@
 }
 .searchFarmerDiv h1{
     color: #EEEEEE;
+}
+.farmerDetail h3{
+    color: aliceblue;
+}
+
+.farmerDetail p{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
 }
