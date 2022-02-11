@@ -1,0 +1,35 @@
+.searchFarmerDiv{
+    position: absolute;
+  left: calc((100vw*50)/100);
+  top: calc((100vh*20)/100);
+  width: 300px;
+  height: 380px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #398AB9;
+   border-radius: 4px;
+   box-shadow: 3px 7px #888888;
+}
+.searchFarmerDiv input{
+    margin: 20px;
+    padding: 15px;
+    width: 70%;
+    font-size: 18px;
+    background-color: #D8D2CB;
+    color: black;
+    border: none;
+    outline: none;
+}
+.searchFarmerDiv button{
+    margin: 20px;
+    padding: 15px;
+    width: 70%;
+    font-size: 20px;
+    background-color: #D8D2CB;
+}
+.searchFarmerDiv button:hover{
+    cursor: pointer;
+}
+.searchFarmerDiv h1{
+    color: #EEEEEE;
+}

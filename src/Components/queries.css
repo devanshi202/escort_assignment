@@ -1,0 +1,35 @@
+.queriesDiv{
+    position: absolute;
+  left: calc((100vw*50)/100);
+  top: calc((100vh*20)/100);
+  width: 300px;
+  height: 380px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #398AB9;
+   border-radius: 4px;
+   box-shadow: 3px 7px #888888;
+}
+
+.queriesTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.queriesTable td, .queriesTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.queriesTable tr{background-color: #D8D2CB;}
+
+.queriesTable tr:hover {background-color: #ddd;}
+
+.queriesTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: #EEEEEE;
+  background-color: #398AB9;
+}

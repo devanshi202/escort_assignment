@@ -1,0 +1,28 @@
+.homePageDiv{
+    width: calc((100vw*30)/100);
+    height: 100vh;
+    border: 2px solid black;
+    background-color: #1C658C;
+}
+
+.homePageDiv button{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 65px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #D8D2CB;
+    color: black;
+    border-radius: 3px;
+    min-width: 210px;
+
+}
+.homePageDiv button:hover{
+    transform: scale(1.05);
+    border: 1.5px solid black;
+    box-shadow: black;
+    cursor: pointer;
+}
