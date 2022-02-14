@@ -8,9 +8,7 @@ export class SearchFarmer extends Component {
     super();
     this.state = {
       farmerName: "",
-      name: "",
-      email: "",
-      mobile: "",
+      data:{},
       hasData: false,
     };
   }
@@ -27,46 +25,40 @@ export class SearchFarmer extends Component {
       `/getFarmerDetails?farmer=${this.state.farmerName}`
     );
     console.log(res.data);
-    let data = res.data;
+
     this.setState({
-      name: data.name,
-      email: data.email,
-      mobile: data.mobile,
+      data: res.data,
       hasData: true,
     });
   };
 
   render() {
     return (
-      <div className="searchFarmerDiv">
+      <>
+
+      
+
+        {this.state.hasData ?  (
+         <FarmerDetails data={this.state.data}/>
+        ) : (
+          <div className="searchFarmerDiv container">
         <h1>Search Farmer</h1>
         <input
+          placeholder="Name"
           type="text"
           value={this.state.farmerName}
           onChange={this.handleChange}
         ></input>
 
-        <button type="submit" onClick={this.handleClick}>
-          search
+        <button className="glow-on-hover" type="submit" onClick={this.handleClick}>
+          Search
         </button>
-
-        {this.state.hasData ?  (
-          <div className="farmerDetail">
-            <div>
-              <h3>Name : </h3>
-              <p>{this.state.name}</p>
-            </div>
-            <div>
-              <h3>Email : </h3>
-              <p>{this.state.email}</p>
-            </div>
-            <div>
-              <h3>Mobile : </h3>
-              <p>{this.state.mobile}</p>
-            </div>
           </div>
-        ) : null}
-      </div>
+        )}
+      
+
+
+      </>
     );
   }
 }

@@ -3,33 +3,51 @@
   left: calc((100vw*50)/100);
   top: calc((100vh*20)/100);
   width: 300px;
-  height: 380px;
-  border: 2px solid black;
+  height: 320px;
+  border: 0px solid black;
   padding: 10px;
   background-color: #398AB9;
-   border-radius: 4px;
-   box-shadow: 3px 7px #888888;
+   border-radius: 8px;
 }
 
 .queriesTable {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
   border-collapse: collapse;
   width: 100%;
 }
 
 .queriesTable td, .queriesTable th {
-  border: 1px solid #ddd;
+  /* border: 2px solid black; */
+  border-top: 2px solid black;
   padding: 8px;
 }
 
-.queriesTable tr{background-color: #D8D2CB;}
+.queriesTable td{
+  font-size: 1.2rem;
+}
+.queriesTable th{
+  font-size: 1.3rem;
+  background-color: rgb(172, 130, 130);
+}
 
-.queriesTable tr:hover {background-color: #ddd;}
+.queriesTable tr:hover {background-color: rgba(202, 171, 171, 0.466);}
 
 .queriesTable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  color: #EEEEEE;
-  background-color: #398AB9;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+  color: black;
+  
+}
+
+.white{
+  color: white;
+  font-weight: 600;
+  border-right: 2px solid black;
+}
+.bs{
+  border-right: 2px solid black;
+}
+.str{
+  font-weight: 600;
 }

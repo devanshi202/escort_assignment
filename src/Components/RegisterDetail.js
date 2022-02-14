@@ -13,10 +13,10 @@ export class RegisterDetail extends Component { //prop recieved as name
 
   render() {
 
-    return <div className='registerDetailDiv'>
+    return <div className='registerDetailDiv container'>
         
-            <h3>{this.props.data.farmer}</h3>
             <p>{this.props.data.message}</p>
+            <h2>Name: {this.props.data.farmer}</h2>
        
     </div>;
   }

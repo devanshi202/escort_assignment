@@ -20,11 +20,11 @@ export class Queries extends Component {
     }
   render() {
       let queriesArr = this.state.queries;
-    return <div className='queriesDiv'>
-        <table className='queriesTable'>
+    return <div className='queriesDiv container'>
+        <table className='queriesTable container'>
             <thead>
                 <tr>
-                    <th>Farmer</th>
+                    <th className='bs'>Farmer</th>
                     <th>Query</th>
                 </tr>
             </thead>
@@ -43,8 +43,8 @@ export class Queries extends Component {
             return (
 
                 <tr key={n}>
-                    <td>{n}</td>
-                    <td>{q}</td>
+                    <td className='white'>{n}</td>
+                    <td className='str'>{q}</td>
                 </tr>
                 
             );

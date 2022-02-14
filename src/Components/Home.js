@@ -20,19 +20,23 @@ export class Home extends Component {
 
   render() {
     return <div className='homePageDiv'>
-        <Link to="/register">
+        <Link to="/register" style={{ textDecoration: 'none' }}>
 
-        <button className='register' onClick={this.handleClick}>Register Farmers</button>
+        <button className='glow-on-hover' onClick={this.handleClick}>Register Farmers</button>
         </Link>
-        <Link to="/search">
+        <Link to="/search" style={{ textDecoration: 'none' }}>
 
-        <button onClick={this.handleClick}>Search Farmers</button>
+        <button className='glow-on-hover' onClick={this.handleClick}>Search Farmers</button>
         </Link>
-        <Link to="/queries">
+        <Link to="/queries" style={{ textDecoration: 'none' }}>
 
-        <button onClick={this.handleClick}>List Queries</button>
+        <button  className='glow-on-hover' onClick={this.handleClick}>List Queries</button>
         </Link>
-        <button onClick={this.handleClick}>Check Weather</button>
+
+        <Link to="/weather" style={{ textDecoration: 'none' }}>
+
+        <button className='glow-on-hover' onClick={this.handleClick}>Check Weather</button>
+        </Link>
     </div>;
   }
 }

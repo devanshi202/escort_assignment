@@ -1,37 +1,39 @@
 .searchFarmerDiv{
     position: absolute;
   left: calc((100vw*50)/100);
-  top: calc((100vh*7)/100);
+  top: calc((100vh*20)/100);
   width: 300px;
-  height: 520px;
+  height: 310px;
   border: 2px solid black;
   padding: 10px;
   background-color: #398AB9;
-   border-radius: 4px;
-   box-shadow: 3px 7px #888888;
+   border-radius: 8px;
 }
 .searchFarmerDiv input{
+    padding: 10px 17px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, .1);
+    color: white;
     margin: 20px;
-    padding: 15px;
-    width: 70%;
-    font-size: 18px;
-    background-color: #D8D2CB;
-    color: black;
-    border: none;
-    outline: none;
 }
 .searchFarmerDiv button{
     margin: 20px;
     padding: 15px;
     width: 70%;
     font-size: 20px;
-    background-color: #D8D2CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
 }
 .searchFarmerDiv button:hover{
     cursor: pointer;
 }
 .searchFarmerDiv h1{
-    color: #EEEEEE;
+    color: black;
+    margin-left: 27px;
 }
 .farmerDetail h3{
     color: aliceblue;
@@ -41,4 +43,7 @@
     color: black;
     font-size: 15px;
     font-weight: 600;
+}
+::placeholder{
+    color: rgb(43, 42, 42);
 }
