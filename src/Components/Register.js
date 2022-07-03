@@ -31,7 +31,8 @@ export default class Register extends Component {
       farmer: this.state.farmerName,
       developer: this.state.developerName,
     };
-    let res = await axios.post("/registerFarmer", obj);
+    console.log(obj);
+    let res = await axios.post("https://qwys2ztqt0.execute-api.us-west-2.amazonaws.com/createUser", obj);
 
     console.log(res.data);
     this.setState({
@@ -39,7 +40,7 @@ export default class Register extends Component {
       hasData: true,
     });
 
-    // window.alert(res.data.message + " for farmer: " + res.data.farmer);
+    window.alert("user registered succesfully");
   };
 //   componentWillUnmount() {
 //     alert("The component is going to be unmounted");
@@ -47,9 +48,7 @@ export default class Register extends Component {
   render() {
     return (
       <>
-        {this.state.hasData ? (
-          <RegisterDetail data={this.state.resData} />
-        ) : (
+        {(
           <div className="registerDiv container">
             <h1>Register Farmer</h1>
             <form onSubmit={this.handleSubmit}>

@@ -22,7 +22,7 @@ export class SearchFarmer extends Component {
 
   handleClick = async () => {
     let res = await axios.get(
-      `/getFarmerDetails?farmer=${this.state.farmerName}`
+      `https://v21kqbxf7c.execute-api.us-west-2.amazonaws.com/default/getDetails?farmer=${this.state.farmerName}`
     );
     console.log(res.data);
 

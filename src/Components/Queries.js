@@ -10,12 +10,12 @@ export class Queries extends Component {
     }
 
     componentDidMount= async ()=>{
-        let queries = await axios.get("/queries");
+        let queries = await axios.get("https://sf06g1xl98.execute-api.us-west-2.amazonaws.com/default/getQueries");
         //loop on queries and add in new arr then set state?
         //or
         console.log(queries);
         this.setState({
-            queries: queries.data
+            queries: [queries.data]
         })
     }
   render() {

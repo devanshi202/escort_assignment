@@ -17,9 +17,13 @@ export class Weather extends Component {
             console.log(this.state.location);
         let res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=398e29d370ef94689e7127410fe305c5`)
         console.log(res.data);
+        // console.log(res.data.message);
+        
         this.setState({
             data: res.data
         })
+    
+    
     }
     }
 
